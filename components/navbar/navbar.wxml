@@ -1,0 +1,17 @@
+<view class="nav-bar" style="padding-top:{{statusBarHeight}}px">
+    <view class="left" bind:tap="onClickLeft" wx:if="{{showLeft}}">
+        <image class="left-icon" src="/src/navbar/nav_back_white.png" />
+    </view>
+    <view class="left" bind:tap="onClickHome" wx:if="{{showHome}}">
+        <view class="left-home">
+            <image class="left-home-icon" src="/src/navbar/nav_back_home_white.png" />
+        </view>
+    </view>
+    <view class="nav-title" style="color:{{color}}">
+        <view class="one-row-word" style="max-width: 240rpx">{{title}}</view>
+        <view class="sub-title" wx:if="{{subTitle}}">{{subTitle}}</view>
+    </view>
+</view>
+<!--
+<view style="height: {{44 + statusBarHeight}}px;"></view>
+-->

@@ -1,0 +1,20 @@
+<nav-bar title="首页" showLeft="{{false}}" showHome="{{false}}"></nav-bar>
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<view class="home-con" style="{{'padding-top:'+topHeight+'px'}}" >
+  <!--时间层 -->
+  <view class="show-tell every-outer" >
+   <view class="timeQuanNum">{{showTimeTitle(timeQuanTime)}}</view>
+   <view class="timeQuanNum">{{showTimeSubTitle(timeQuanTime)}}</view>
+  </view>
+    <!--信息概览层-->
+  <view class=" demo-info every-outer" >
+     <view class="every-little-show">  <text class="left-title">我的任务集</text>  <text ></text>      </view>
+     <view class="every-little-show">  <text class="left-title">我的日记</text>  <text ></text>      </view>
+     <view class="every-little-show">  <text class="left-title">我的博文</text>  <text ></text>      </view>
+     <view class="every-little-show">  <text class="left-title">我的收藏</text>  <text ></text>      </view>
+  </view>
+   <!--个人喜好层 -->
+  <view class="my-favite  every-outer"></view>
+  <!--记事展示层-->
+  <view class="show-info every-outer"></view>
+</view>

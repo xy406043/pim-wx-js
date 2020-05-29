@@ -1,0 +1,175 @@
+.loading-con{
+    height:100%;
+    width: 100%;
+    overflow: auto;
+    background-image: url('http://xynagisa.xyz/1584457596506_gaitubao_750x1500 (1)_1590648855521.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background:linear-gradient(rgb(76, 233, 253),rgb(24, 203, 235)) */
+}
+
+.login-form{
+    height: 670rpx;
+    width: 430rpx;
+    /* border: 1px solid; */
+    padding: 20rpx 80rpx;
+    background: rgba(255, 255, 255, 0.555);
+    /* box-shadow:1px 2px 3px grey; */
+}
+.view-theme{
+    width: 100%;
+    margin-top: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+}
+.show-image{
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 50%;
+}
+.this-notice{
+    font-size: 50rpx;
+    margin-top:20rpx ;
+    font-weight: bolder;
+    color:transparent;
+    /* 背景在前 */
+    animation: show-anima 3s linear infinite;
+}
+@keyframes show-anima{
+    0% {
+        background: -webkit-linear-gradient(45deg,rgb(0, 255, 221),rgb(0, 60, 128));  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    30%{
+        background: -webkit-linear-gradient(135deg,rgb(0, 119, 255),rgb(49, 0, 128));  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60%{
+        background: -webkit-linear-gradient(215deg,rgb(111, 0, 255),rgb(128, 0, 117));  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90%{
+        background: -webkit-linear-gradient(305deg,rgb(255, 94, 0),rgb(0, 128, 117)); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+}
+.user,.pass{
+    margin: 60rpx 20rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    width: 160rpx;
+}
+.right{
+    width: 300rpx;
+}
+.letf,.right input{
+    border-bottom:2rpx solid rgb(170, 167, 167);
+    
+}
+.input-placeholder{
+    color: rgb(103, 137, 146);
+}
+.form{
+    margin-top: 60rpx;
+}
+.my-button{
+    width: 100%;
+    height: 80rpx;
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36rpx;
+}
+.my-button:active{
+    opacity: 0.8;
+}
+
+/* 加载动画 */
+.loading-show-con{
+    display: flex;
+    flex-direction: column;
+}
+.loading{
+    height: 100rpx;
+    width: 100rpx;
+    margin:auto;
+    position: relative;
+}
+.loading view{
+    height: 100rpx;
+    width:100rpx;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+.loading view:nth-child(1){
+    border:2rpx solid blue;
+    /* background: blue;
+    mix-blend-mode: lighten; */
+    animation: rotate 3s linear  1s infinite;
+}
+.loading view:nth-child(2){
+    border: 2rpx solid rgb(0, 255, 128);
+    /* background:rgb(0, 255, 128) ;
+    mix-blend-mode: lighten; */
+    animation: rotate 3s linear 2s infinite;
+}
+.loading view:nth-child(3){
+    border:2rpx solid rgb(0, 247, 255);
+    /* background:  rgb(0, 247, 255);
+    mix-blend-mode: lighten; */
+    animation: rotate 3s linear 3s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.loading-in{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    vertical-align: bottom;
+    color:white;
+    margin-top: 50rpx;
+}
+.loading-in:after{
+    content:'';
+    animation: loading 2s linear infinite;
+}
+@keyframes loading{
+    0%,100%{
+        content:''
+    }
+    30%{
+        content:'.'
+    }
+    60%{
+        content:".."
+    }
+    90%{
+        content:"..."
+    }
+}

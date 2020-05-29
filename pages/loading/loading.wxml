@@ -1,0 +1,32 @@
+
+<view class="loading-con">
+    <!-- 直接使用 PC账号登录，毕竟也只有自己在使用 -->
+    <view class="login-form" wx:if="{{doToken===false}}">
+        <view class="view-theme">
+            <image src="http://xynagisa.xyz/3E1FC9B575243BE1BBE464F1D7DBF8FD_1590475736477.jpg" class="show-image"></image>
+            <view class="this-notice">Your's</view>
+        </view>
+        <view class="user">
+           <view class="left" > 用户名： </view>
+           <view class="right" >
+            <input class="my-input" value="{{userName}}" bindinput="inputUserName" placeholder="请输入用户名" placeholder-class="input-placeholder" ></input>
+           </view>
+        </view>
+        <view class="pass">
+         <view class="left" > 密码： </view>
+           <view class="right" >
+            <input class="my-input" type="password" bindinput="inputPassword" value="{{password}}" placeholder="请输入密码" placeholder-class="input-placeholder" ></input>
+           </view>
+        </view>
+          <view class="my-button"  bindtap="login"> 登录 </view>
+    </view>
+    <view class="loading-show-con" wx:else>
+     <view class="loading" >
+       <view ></view>
+       <view ></view>
+       <view ></view>
+    </view>
+    <view class="loading-in" >加载中</view>
+    </view>
+   
+</view>

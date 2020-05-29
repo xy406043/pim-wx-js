@@ -1,0 +1,40 @@
+
+function showTimeTitle(val){
+    switch(val){
+        case 0:
+            return "夜深了"
+        case 1:
+            return "早上好"
+        case 2:
+            return "上午好"
+        case 3:
+            return "下午好"
+        case 3:
+            return "晚上好"
+    }
+}
+
+
+function showTimeSubTitle(val){
+    switch(val){
+        case 0:
+            return "注意休息"
+        case 1:
+            return "健康生活每一天"
+        case 2:
+            return "工作加油"
+        case 3:
+            return "调整精神状态"
+        case 3:
+            return "完整度过"
+    }
+}
+
+
+
+
+module.exports = {
+    showTimeTitle:showTimeTitle,
+    showTimeSubTitle:showTimeSubTitle
+
+}

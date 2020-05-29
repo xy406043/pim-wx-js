@@ -1,0 +1,8 @@
+
+.home-con{
+    padding: 30rpx 40rpx;
+  
+}
+.every-outer{
+    background: rgba(255, 255, 255, 0.849);
+}

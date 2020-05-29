@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/loading/loading",
+    "pages/index/index",
+    "pages/projects/projects",
+    "pages/project-detail/project-detail",
+    "pages/todos/todos",
+    "pages/todo-detail/todo-detail"
+  ],
+   "usingComponents":{
+      "van-field":"./dist/field/index"
+   },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
